@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>初めてのホームページ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <h1>ToDoアプリ</h1>
+
+        <div class="input-area">
+            <input id="todoInput" type="text" placeholder="やることを入力">
+            <button id="addButton">追加</button>
+        </div>
+
+        <div class="filter-buttons">
+            <button id="allButton">すべて</button>
+            <button id="activeButton">未完了</button>
+            <button id="completedButton">完了</button>
+        </div>
+<div class="todo-info">
+    <span id="remainingCount">未完了 0件</span>
+    <button id="clearCompletedButton">完了済みを削除</button>
+</div>
+        <ul id="todoList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    color: #222;
+}
+
+.app {
+    width: min(92%, 680px);
+    margin: 60px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#todoInput {
+    flex: 1;
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+#todoInput:focus {
+    border-color: #666;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 12px 16px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#addButton {
+    background: #222;
+    color: white;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    background: #e5e7eb;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todoList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #f9fafb;
+    padding: 14px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+}
+
+#todoList li span {
+    flex: 1;
+}
+
+#todoList input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+#todoList button {
+    background: #e5e7eb;
+}
+
+.editInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+    .app {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .input-area {
+        flex-direction: column;
+    }
+
+    #addButton {
+        width: 100%;
+    }
+
+    .filter-buttons {
+        flex-wrap: wrap;
+    }
+
+    #todoList li {
+        flex-wrap: wrap;
+    }
+}
+.filter-buttons button.active {
+    background: #222;
+    color: white;
+}
