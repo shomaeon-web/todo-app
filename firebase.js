@@ -9,12 +9,12 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.17.1/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "ここに自分のapiKey",
-    authDomain: "ここに自分のauthDomain",
-    projectId: "ここに自分のprojectId",
-    storageBucket: "ここに自分のstorageBucket",
-    messagingSenderId: "ここに自分のmessagingSenderId",
-    appId: "ここに自分のappId"
+    apiKey: "AIzaSyDshvb93kqkp83vvE9VQQPKDAxQ96zYURw",
+    authDomain: "todo-app-c0490.firebaseapp.com",
+    projectId: "todo-app-c0490",
+    storageBucket: "todo-app-c0490.firebasestorage.app",
+    messagingSenderId: "652132410596",
+    appId: "1:652132410596:web:757df0f9c915671f2638f1"
 };
 
 const app = initializeApp(firebaseConfig);
