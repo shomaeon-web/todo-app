@@ -134,3 +134,42 @@ button:hover {
     background: #222;
     color: white;
 }
+.auth-area {
+    margin-bottom: 25px;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 12px;
+}
+
+.auth-area h2 {
+    margin-top: 0;
+}
+
+.auth-area input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.auth-buttons button {
+    background: #e5e7eb;
+}
+
+#loginButton {
+    background: #222;
+    color: white;
+}
+
+#authMessage {
+    margin-bottom: 0;
+    font-size: 14px;
+}
